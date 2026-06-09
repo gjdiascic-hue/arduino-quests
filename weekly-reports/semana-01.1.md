@@ -2,8 +2,7 @@
 ## 1. Objetivo da semana
 Descrever o objetivo técnico da atividade.
 ## 2. O que foi estudado
-Listar os principais conteúdos estudados na semana.
-Exemplo:
+
 - Uso de pinos digitais.
 - Funcionamento de LED e resistor.
 - Estrutura básica de um programa Arduino.
@@ -11,21 +10,24 @@ Exemplo:
 - Registro da atividade no GitHub.
 ## 3. O que eu aprendi
 Cada estudante deve escrever, com suas próprias palavras, o que aprendeu.
-### Estudante 1
+### Giselly Jahel Dias
 Texto individual do estudante.
-### Estudante 2
+### Thalisson Souza Silva
 Texto individual do estudante.
 ## 4. Explicação técnica da atividade
 Explicar como o circuito funciona, como o código funciona e qual é a relação entre hardware
 e software.
 ## 5. Circuito
-Inserir imagem do circuito no Tinkercad ou foto do hardware real.
+
+<img width="1536" height="694" alt="Semana 1 1 - LED (piscar com três padrões diferentes )" src="https://github.com/user-attachments/assets/f1a29b1d-d129-4d06-aa5b-356fcb8d6116" />
+
 ## 6. Componentes utilizados
-Listar componentes, valores e função no circuito.
+
 | Componente | Valor/modelo | Função no circuito |
 |---|---|---|
 | LED | Vermelho | Indicar saída digital |
 | Resistor | 220 Ω | Limitar corrente do LED |
+| Arduino | Uno R3 | Controlar o circuito e processar o código|
 
 ## 7. Código
 Indicar o arquivo principal do firmware e explicar a lógica usada.
@@ -42,4 +44,4 @@ Explicar como o conceito estudado na semana pode ser usado em uma solução real
 ## 13. Critério de aceite
 Informar se a entrega passou ou não passou no critério técnico definido.
 ## 14. Link da simulação, vídeo ou evidência
-Inserir link do Tinkercad, vídeo, imagem, commit ou pasta do GitHub.
+https://www.tinkercad.com/things/14zNVky9oI3-semana-11-led-piscar-com-tres-padroes-diferentes-/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall&sharecode=4ZcxleuZkFGPVpisu3SBVB_b_pb7cltN-lxQ6pYCFd8
