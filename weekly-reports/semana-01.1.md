@@ -2,9 +2,7 @@
 ## 1. Objetivo da semana
 Descrever o objetivo técnico da atividade.
 ## 2. O que foi estudado
-Listar os principais conteúdos estudados na semana.  
-
-Exemplo: 
+Listar os principais conteúdos estudados na semana. Exemplo: 
 - Uso de pinos digitais.
 - Funcionamento de LED e resistor.
 - Estrutura básica de um programa Arduino.
