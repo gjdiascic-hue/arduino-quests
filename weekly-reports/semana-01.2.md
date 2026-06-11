@@ -1,6 +1,6 @@
 # Semana 1.2 — Protoboard virtual, resistores e LEDs externos
 ## 1. Objetivo da semana
-Descrever o objetivo técnico da atividade.
+Compreender os fundamentos do Arduino, configurar o ambiente de simulação virtual no Tinkercad, aprender a manipular pinos digitais de saída, utilizar o GitHub para o controle de versão e documentação do projeto e se familiarizar com o funcionamento do código no Arduino.
 ## 2. O que foi estudado
 Listar os principais conteúdos estudados na semana.
 Exemplo:
