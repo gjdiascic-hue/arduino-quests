@@ -37,15 +37,47 @@ Imagem do circuito no Tinkercad ou foto do hardware real.
 Listar componentes, valores e função no circuito.
 | Componente | Valor/modelo | Função no circuito |
 |---|---|---|
-| LED | Vermelho | Saída - pino 13 |
+| Arduino Uno | - | Microcontrolador, gera os sinais digitais |
+| LED | Vermelho | Indicar sinal aberto |
+| LED | Verde | Indicar sinal fechado |
+| LED | Amarelo | Indicar atenção |
 | Resistor | 330 Ω | Limitar corrente do LED |
-| LED | Verde | Saída - pino 11 |
-| Resistor | 330 Ω | Limitar corrente do LED |
-| LED | Amarelo | Saída - pino 12 |
-| Resistor | 330 Ω | Limitar corrente do LED |
+| Protoboard | - | Organizar as conexões do circuito |
+| Fios/Jumpers | - | Realizar conexões dos componentes |
 
 ## 7. Código
 O arquivo principal do firmware é semaforo.ino, localizado em firmware/src/.
+
+const int LED_VERDE    = 11;
+const int LED_AMARELO  = 12;
+const int LED_VERMELHO = 13;
+
+void setup() {
+  pinMode(LED_VERDE,    OUTPUT);
+  pinMode(LED_AMARELO,  OUTPUT);
+  pinMode(LED_VERMELHO, OUTPUT);
+}
+
+void loop() {
+  // VERDE — sinal aberto
+  digitalWrite(LED_VERDE,    HIGH);
+  digitalWrite(LED_AMARELO,  LOW);
+  digitalWrite(LED_VERMELHO, LOW);
+  delay(5000);
+
+  // AMARELO — atenção
+  digitalWrite(LED_VERDE,    LOW);
+  digitalWrite(LED_AMARELO,  HIGH);
+  digitalWrite(LED_VERMELHO, LOW);
+  delay(2000);
+
+  // VERMELHO — parado
+  digitalWrite(LED_VERDE,    LOW);
+  digitalWrite(LED_AMARELO,  LOW);
+  digitalWrite(LED_VERMELHO, HIGH);
+  delay(5000);
+}
+
 
 O código é organizado em duas funções obrigatórias do Arduino:
 
