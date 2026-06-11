@@ -32,6 +32,25 @@ Para cumprir o critério de aceite de criar três padrões de pisca (lento, ráp
 ## 7. Código
 O arquivo principal do firmware é piscarled.ino, localizado em firmware/src/.
 
+```cpp
+void piscarLed(int pino, int tempoLigado, int tempoDesligado){
+  	digitalWrite(pino, HIGH); //liga o led
+  	delay(tempoLigado); //espera o tempo ligado
+	digitalWrite(pino, LOW); //desliga o led
+	delay(tempoDesligado); //espera o tempo desligado
+}
+
+void setup() {
+	pinMode(13, OUTPUT); //configura o pino 13 como saída 
+}
+
+void loop() {
+	piscarLed(13, 1200, 1500); //pisca lento
+	piscarLed(13, 3, 7); //pisca rápido
+	piscarLed(13, 700, 900); //sequência personalizada
+}
+```
+
 O código foi modularizado utilizando a função obrigatória `piscarLed`, permitindo alternar de forma limpa entre os três padrões exigidos (lento, rápido e sequência personalizada).
 
 ## 8. Testes realizados
