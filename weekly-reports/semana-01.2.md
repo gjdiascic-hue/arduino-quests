@@ -16,10 +16,26 @@ Texto individual do estudante.
 ### Estudante 2
 Nessa semana 1.2, pude aprender como funciona a lógica do código em relação à alternância de funções (ligar um led, desligar outro led etc). E também aprendi como o Arduino "conversa" com o protoboard.
 ## 4. Explicação técnica da atividade
-Explicar como o circuito funciona, como o código funciona e qual é a relação entre hardware
-e software.
+Circuito:
+O circuito é composto por três LEDs (verde, amarelo e vermelho) conectados aos pinos digitais 11, 12 e 13 do Arduino UNO, respectivamente. Cada LED possui um resistor de 330 Ω em série entre seu cátodo e o rail negativo da protoboard, que por sua vez está conectado ao GND do Arduino. Essa configuração limita a corrente que passa pelo LED a aproximadamente 9 mA, calculado pela Lei de Ohm:
+R = (Vcc - Vf) / I = (5V - 2V) / 0,009A ≈ 330 Ω
+O ânodo de cada LED recebe o sinal de saída do respectivo pino digital do Arduino.
+
+Código:
+O código configura os pinos 11, 12 e 13 como saída no setup(). No loop(), os LEDs são acionados em sequência usando digitalWrite() e delay():
+
+Verde acende por 5 segundos — sinal aberto
+Amarelo acende por 2 segundos — atenção
+Vermelho acende por 5 segundos — parado
+
+A cada fase, os outros dois LEDs são explicitamente apagados com LOW para garantir que apenas um esteja aceso por vez.
+
+Relação entre hardware e software:
+O software controla diretamente o estado elétrico dos pinos. Quando o Arduino executa digitalWrite(pino, HIGH), aplica 5V no ânodo do LED correspondente, completando o circuito e acendendo-o. O delay() determina por quanto tempo cada estado se mantém antes de avançar para o próximo, reproduzindo o comportamento temporal de um semáforo real.
 ## 5. Circuito
-Inserir imagem do circuito no Tinkercad ou foto do hardware real.
+Imagem do circuito no Tinkercad ou foto do hardware real.
+<img width="1707" height="828" alt="semaforo" src="https://github.com/user-attachments/assets/162f5ea6-5732-42e4-84f4-d991ab0f8ff5" />
+
 ## 6. Componentes utilizados
 Listar componentes, valores e função no circuito.
 | Componente | Valor/modelo | Função no circuito |
