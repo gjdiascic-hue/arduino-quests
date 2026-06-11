@@ -29,7 +29,7 @@ A cada fase, os outros dois LEDs são explicitamente apagados com LOW para garan
 
 O software controla diretamente o estado elétrico dos pinos. Quando o Arduino executa digitalWrite(pino, HIGH), aplica 5V no ânodo do LED correspondente, completando o circuito e acendendo-o. O delay() determina por quanto tempo cada estado se mantém antes de avançar para o próximo, reproduzindo o comportamento temporal de um semáforo real.
 ## 5. Circuito
-Imagem do circuito no Tinkercad ou foto do hardware real.
+Imagem do circuito no Tinkercad.
 <img width="1707" height="828" alt="semaforo" src="https://github.com/user-attachments/assets/162f5ea6-5732-42e4-84f4-d991ab0f8ff5" />
 
 ## 6. Componentes utilizados
