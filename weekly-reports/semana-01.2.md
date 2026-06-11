@@ -10,7 +10,6 @@ Montar um semáforo simples com três LEDs (verde, amarelo e vermelho) na protob
 - Simulação do circuito no Tinkercad
 - Registro da atividade no GitHub
 ## 3. O que eu aprendi
-Cada estudante deve escrever, com suas próprias palavras, o que aprendeu.
 ### Giselly Jahel Dias
 Texto individual do estudante.
 ### Thalisson Souza Silva
