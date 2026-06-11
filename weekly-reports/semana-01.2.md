@@ -47,7 +47,7 @@ Listar componentes, valores e função no circuito.
 
 ## 7. Código
 O arquivo principal do firmware é semaforo.ino, localizado em firmware/src/.
-
+```cpp
 const int LED_VERDE    = 11;
 const int LED_AMARELO  = 12;
 const int LED_VERMELHO = 13;
@@ -77,7 +77,7 @@ void loop() {
   digitalWrite(LED_VERMELHO, HIGH);
   delay(5000);
 }
-
+```
 
 O código é organizado em duas funções obrigatórias do Arduino:
 
@@ -87,16 +87,16 @@ loop() — executada continuamente em ciclo. Contém a sequência do semáforo: 
 
 O delay() define o tempo de permanência em cada fase, em milissegundos. As constantes LED_VERDE, LED_AMARELO e LED_VERMELHO foram usadas no lugar de números diretos para tornar o código mais legível e fácil de manter — se o circuito mudar de pino, é só alterar a constante.
 ## 8. Testes realizados
-Descrever como o teste foi executado.
+O circuito foi montado e testado primeiramente no Tinkercad, onde foi possível verificar a sequência de acionamento dos LEDs e os tempos de cada fase. E o código foi implantado via Arduino IDE.
 ## 9. Resultados obtidos
-Apresentar leituras, imagens, vídeo curto, tabela ou observações.
+O semáforo funcionou corretamente tanto na simulação. Os três LEDs acenderam na sequência verde → amarelo → vermelho, com os tempos definidos de 5s, 2s e 5s respectivamente, repetindo o ciclo continuamente.
 ## 10. Problemas encontrados
-Indicar erros de montagem, código, alimentação, ruído, leitura incorreta ou instabilidade.
+O fio de GND foi conectado inicialmente ao rail positivo da protoboard em vez do negativo, impedindo o funcionamento do circuito.
 ## 11. Correções realizadas
-Explicar como os problemas foram corrigidos.
+O fio de GND foi movido para o rail negativo (–) da protoboard.
 ## 12. Relação com aplicações do dia a dia
-Explicar como o conceito estudado na semana pode ser usado em uma solução real.
+O semáforo é a aplicação mais direta deste conceito, presente em qualquer cenário urbano. Além disso, o mesmo princípio de acionamento sequencial de saídas digitais com temporização é usado em painéis de sinalização industrial, sistemas de alarme com LEDs de status, e qualquer equipamento que precise indicar estados diferentes ao usuário por meio de sinais visuais.
 ## 13. Critério de aceite
-Informar se a entrega passou ou não passou no critério técnico definido.
+Aprovado — os LEDs vermelho, amarelo e verde acendem em sequência correta com os tempos definidos.
 ## 14. Link da simulação, vídeo ou evidência
-Inserir link do Tinkercad, vídeo, imagem, commit ou pasta do GitHub.
+(https://www.tinkercad.com/things/lKOdWLHA2Kc-semana-12-semaforo-simples/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits%3Fsort%3Dname&sharecode=0aVT4CdIXVCetW64FcU1zYfuUWYX6P9H7nkKYiI_XOA)
