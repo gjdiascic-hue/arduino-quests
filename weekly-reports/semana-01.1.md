@@ -11,7 +11,9 @@ Compreender os fundamentos do Arduino, configurar o ambiente de simulação virt
 ## 3. O que eu aprendi
 
 ### Giselly Jahel Dias
-Na semana 1.1, eu aprendi a realizar simulações na plataforma Tinkercad, bem como a manipular pinos digitais e LED's, através do uso de funções. Também compreendi conceitos básicos acerca do hardware Arduino Uno essenciais para o desenvolvimento deste projeto.
+Na semana 01.1 tive meu primeiro contato com a plataforma Tinkercad e achei a experiência muito boa. Aprendi a simular circuitos sem precisar de componentes físicos, algo essencial para testar as ideias de forma segura.
+Em relação ao hardware, compreendi o funcionamento do Arduino Uno e porque o resistor é indispensável num circuito com LED, ele protege o componente limitando a corrente, evitando que o circuito queime. Quanto ao software, aprendi a estrutura básica de um firmware Arduino: o setup(), roda uma vez para configurar os pinos, e o loop(), repete o código indefinidamente.
+Trabalhei com as funções pinMode(), digitalWrite() e delay() para controlar um LED digitalmente, ligando e desligando com diferentes tempos. Para organizar o código, utilizei a função piscarLed(), que recebe como parâmetros o pino e os tempos ligado/desligado, possibilitando a implementação de três padrões de piscar (lento, rápido e personalizado) de forma limpa e reutilizável, sem repetir código.
 ### Thalisson Souza Silva
 Aprendi coisas fundamentais para um bom funcionamento de um projeto Arduino que envolva Led, como os resistores por exemplo. E a lógica por trás do próprio código do projeto em questão.
 ## 4. Explicação técnica da atividade
