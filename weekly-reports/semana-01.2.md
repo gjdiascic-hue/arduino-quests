@@ -2,13 +2,13 @@
 ## 1. Objetivo da semana
 Montar um semáforo simples com três LEDs (verde, amarelo e vermelho) na protoboard, calcular os resistores limitadores de corrente usando a Lei de Ohm e programar a sequência correta de acionamento no Arduino.
 ## 2. O que foi estudado
-- Organização elétrica da protoboard
-- Função do resistor limitador de corrente em circuitos com LED
-- Cálculo de resistor usando a Lei de Ohm
-- Pinos digitais do Arduino e função digitalWrite()
-- Estrutura básica de um programa Arduino (setup() e loop())
-- Simulação do circuito no Tinkercad
-- Registro da atividade no GitHub
+- Organização elétrica da protoboard;
+- Função do resistor limitador de corrente em circuitos com LED;
+- Cálculo de resistor usando a Lei de Ohm;
+- Pinos digitais do Arduino e função digitalWrite();
+- Estrutura básica de um programa Arduino (setup() e loop());
+- Simulação do circuito no Tinkercad;
+- Registro da atividade no GitHub.
 ## 3. O que eu aprendi
 ### Giselly Jahel Dias
 Texto individual do estudante.
@@ -30,13 +30,14 @@ A cada fase, os outros dois LEDs são explicitamente apagados com LOW para garan
 O software controla diretamente o estado elétrico dos pinos. Quando o Arduino executa digitalWrite(pino, HIGH), aplica 5V no ânodo do LED correspondente, completando o circuito e acendendo-o. O delay() determina por quanto tempo cada estado se mantém antes de avançar para o próximo, reproduzindo o comportamento temporal de um semáforo real.
 ## 5. Circuito
 Imagem do circuito no Tinkercad.
-<img width="1707" height="828" alt="semaforo" src="https://github.com/user-attachments/assets/162f5ea6-5732-42e4-84f4-d991ab0f8ff5" />
+
+<img width="1536" height="694" alt="Semana 1 2 - Semáforo simples" src="https://github.com/user-attachments/assets/840188a5-e709-4aae-8933-28fe3b88bf86" />
 
 ## 6. Componentes utilizados
 Listar componentes, valores e função no circuito.
 | Componente | Valor/modelo | Função no circuito |
 |---|---|---|
-| Arduino Uno | - | Microcontrolador, gera os sinais digitais |
+| Arduino | Uno R3 | Microcontrolador, gera os sinais digitais |
 | LED | Verde | Indicar sinal aberto |
 | LED | Vermelho| Indicar sinal fechado |
 | LED | Amarelo | Indicar atenção |
@@ -77,7 +78,6 @@ void loop() {
   delay(5000);
 }
 ```
-
 O código é organizado em duas funções obrigatórias do Arduino:
 
 setup() — executada uma única vez na inicialização. Configura os três pinos como saída (OUTPUT) usando pinMode(), preparando o Arduino para enviar sinais elétricos a cada LED.
@@ -96,6 +96,9 @@ O fio de GND foi movido para o rail negativo (–) da protoboard.
 ## 12. Relação com aplicações do dia a dia
 O semáforo é a aplicação mais direta deste conceito, presente em qualquer cenário urbano. Além disso, o mesmo princípio de acionamento sequencial de saídas digitais com temporização é usado em painéis de sinalização industrial, sistemas de alarme com LEDs de status, e qualquer equipamento que precise indicar estados diferentes ao usuário por meio de sinais visuais.
 ## 13. Critério de aceite
-Aprovado — os LEDs vermelho, amarelo e verde acendem em sequência correta com os tempos definidos.
+[ x ] PASSOU  
+[   ] NÃO PASSOU  
+
+Justificativa: os LEDs vermelho, amarelo e verde acendem em sequência correta com os tempos definidos.
 ## 14. Link da simulação, vídeo ou evidência
-(https://www.tinkercad.com/things/lKOdWLHA2Kc-semana-12-semaforo-simples/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits%3Fsort%3Dname&sharecode=0aVT4CdIXVCetW64FcU1zYfuUWYX6P9H7nkKYiI_XOA)
+https://www.tinkercad.com/things/lKOdWLHA2Kc-semana-12-semaforo-simples/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits%3Fsort%3Dname&sharecode=0aVT4CdIXVCetW64FcU1zYfuUWYX6P9H7nkKYiI_XOA
